@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoe Store</title>
+
+  <!-- Bootstrap & FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="d-flex justify-content-end px-4 py-2 border-bottom small text-secondary gap-3">
+    <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-sign-in-alt me-1"></i>Login / Signup</a>
+    <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-user me-1"></i>My Account</a>
+    <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-truck me-1"></i>Track Order</a>
+    <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-map-marker-alt me-1"></i>Stores</a>
+    <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-question-circle me-1"></i>Help</a>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white px-4 py-3">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand">
+        <img src="./images/logo.png" alt="Skechers" height="30">
+      </a>
+
+      <!-- Navbar toggler (mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu items -->
+      <div class="collapse navbar-collapse justify-content-between" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark">WOMEN</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark">MEN</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark">KIDS</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark">APPARELS</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark">COLLECTIONS</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark">SPORTS</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark">SALE</a></li>
+        </ul>
+
+        <!-- Search and Cart -->
+        <div class="d-flex align-items-center gap-3">
+          <div class="input-group">
+            <input type="text" class="form-control search-box" placeholder="Search">
+            <span class="input-group-text bg-white border-0">
+              <i class="fas fa-search text-muted"></i>
+            </span>
+          </div>
+
+          <div class="cart-icon position-relative">
+            <i class="fas fa-shopping-bag fa-lg text-dark"></i>
+            <span class="cart-badge">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-black text-white text-center py-5">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/banner(1).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/banner(2).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/banner(3).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/banner(4).jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="section-title">Shop By Gender</div>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <img src="./images/banner(5).png" alt="Shop Women's" class="gender-img" />
+        <a href="#" class="shop-link">SHOP WOMEN'S &gt;&gt;</a>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <img src="./images/banner(6).png" alt="Shop Men's" class="gender-img" />
+        <a href="#" class="shop-link">SHOP MEN'S &gt;&gt;</a>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <img src="./images/banner(7).png" alt="Shop Kids" class="gender-img" />
+        <a href="#" class="shop-link">SHOP KIDS &gt;&gt;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section-title">What's Hot?</div>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <img src="./images/banner(8).png" alt="Shop Women's" class="gender-img" />
+        <a href="#" class="shop-link">SHOP WOMEN'S &gt;&gt;</a>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <img src="./images/banner(9).png" alt="Shop Men's" class="gender-img" />
+        <a href="#" class="shop-link">SHOP MEN'S &gt;&gt;</a>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <img src="./images/banner(10).png" alt="Shop Kids" class="gender-img" />
+        <a href="#" class="shop-link">SHOP KIDS &gt;&gt;</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Arival Shoes Section -->
+  <section id="shop-section" class="text-center py-5 bg-#00004d">
+    <div class="container">
+      <h3 class="fw-bold mb-2" data-aos="fade-up">New Arrivals shoes for WOMEN</h3>
+      <p class="text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+        Each shoe is based on a New Arrivals shoes for WOMEN.
+      </p>
+
+      <div class="row justify-content-center g-4" style="background-color: white;">
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+          <img src="./images/1.png" class="img-fluid mb-2" alt="Nike Roshe Gold" />
+          <h5>EDEN LX</h5>
+          <p class="text-muted">24 Left in Stock</p>
+          <h6 class="text-primary fw-bold">₹5,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+          <img src="./images/2.png" class="img-fluid mb-2" alt="Nike Roshe France" />
+          <h5>MEDITATION</h5>
+          <p class="text-muted">10 Left in Stock</p>
+          <h6 class="text-primary fw-bold">₹3,799.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/3.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>MEDITATION</h5>
+          <p class="text-muted">GO RUN 400</p>
+          <h6 class="text-primary fw-bold">₹3,799.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/4.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>GO RUN CONSISTENT 2</h5>
+          <p class="text-muted">GO RUN 400 - INTREPID</p>
+          <h6 class="text-primary fw-bold">₹6,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/5.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>EDEN LX</h5>
+          <p class="text-muted">GO RUN 400 - INTREPID</p>
+          <h6 class="text-primary fw-bold">₹5,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/6.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>BOBS SQUAD CHAOS</h5>
+          <p class="text-muted">GO RUN 400 - INTREPID</p>
+          <h6 class="text-primary fw-bold">₹5,499.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/7.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>SUMMITS-EVERYDAY SET</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹6,499.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/8.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>GO WALK ARCH FIT 2.0 - VAL</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹9,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/9.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>GO WALK GLIDE-STEP 2.0 - ANNE</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹10,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/10.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>GO WALK GLIDE-STEP 2.0 - ANNE</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹10,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/11.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>MAX CUSHIONING GLIDE-STEP</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹10,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/12.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>SKECHERS SLIP-INS: VIRTUE - SLEEK</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹7,499.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/13.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>MAX CUSHIONING ARCH FIT 2</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹10,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/14.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>SKECHERS SLIP-INS: VIRTUE - SLEEK</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹7,499.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/15.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>MAX CUSHIONING ARCH FIT 2</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹10,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/16.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>MAX CUSHIONING ENDEAVOUR - HA</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹9,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/17.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>MAX CUSHIONING ENDEAVOUR - HA</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹9,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/18.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>MAX CUSHIONING GLIDE-STEP</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹10,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/19.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>BOBS INFINITY</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹5,999.00</h6>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/20.png" class="img-fluid mb-2" alt="Nike Flyknit Racer" />
+          <h5>GO WALK MAX WALKER - SALLY</h5>
+          <p class="text-muted">GO RUN PERSISTENCE</p>
+          <h6 class="text-primary fw-bold">₹9,999.00</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">6</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row text-start text-md-left">
+
+        <!-- Logo -->
+        <div class="col-md-2 mb-4" data-aos="fade-up">
+          <div class="footer-logo">SKECHERS</div>
+        </div>
+
+        <!-- About -->
+        <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <h6>About Skechers</h6>
+          <a href="#">Corporate Info</a>
+          <a href="#">Corporate Governance</a>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <h6>Customer Service</h6>
+          <a href="#">Return Policy</a>
+          <a href="#">Product Information</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Sitemap</a>
+        </div>
+
+        <!-- My Account -->
+        <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <h6>My Account</h6>
+          <a href="#">Order Status</a>
+          <a href="#">Saved Products</a>
+          <a href="#">My Returns</a>
+        </div>
+
+        <!-- Others -->
+        <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <h6>Others</h6>
+          <a href="#">FAQ</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Find A Store</a>
+        </div>
+
+        <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="500">
+          <h6>Follow us</h6>
+          <div class="d-flex gap-3 align-items-center">
+            <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2020-2021 Skechers India. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+
+</html>
